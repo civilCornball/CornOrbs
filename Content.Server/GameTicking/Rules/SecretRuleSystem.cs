@@ -14,6 +14,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Configuration;
 using Robust.Shared.Utility;
+using Content.Shared.GameTicking; // imp
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -23,8 +24,8 @@ public sealed class SecretRuleSystem : GameRuleSystem<SecretRuleComponent>
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly IPlayerManager _player = default!; // DeltaV
-    [Dependency] private readonly GameTicker _ticker = default!; // begin Imp
+    [Dependency] private readonly GameTicker _ticker = default!; // imp
+    [Dependency] private readonly IPlayerManager _playerManager = default!; // imp
 
     // Dictionary that contains the minimum round number for certain preset
     // prototypes to be allowed to roll again
@@ -92,7 +93,29 @@ public sealed class SecretRuleSystem : GameRuleSystem<SecretRuleComponent>
     {
         var options = _prototypeManager.Index(weights).Weights.ShallowClone();
         var players = GameTicker.ReadyPlayerCount();
-        var totalPlayers = _player.PlayerCount; //DeltaV
+        var totalPlayers = _playerManager.PlayerCount; //DeltaV
+
+        // imp edit start
+        var unreadied = 0;
+
+        // get every UNREADIED player
+        foreach (var (userId, status) in GameTicker.PlayerGameStatuses)
+        {
+            if (status != PlayerGameStatus.NotReadyToPlay)
+                continue;
+
+            if (!_playerManager.TryGetSessionById(userId, out _))
+                continue;
+
+            unreadied++;
+        }
+
+        // divide it by two because not all unreadied players will actually join the round
+        unreadied /= 2;
+
+        // add it to players. half of the unreadied amount will count for game preset rolling
+        players += unreadied;
+        // imp edit end
 
         GamePresetPrototype? selectedPreset = null;
         var sum = options.Values.Sum();
@@ -151,7 +174,7 @@ public sealed class SecretRuleSystem : GameRuleSystem<SecretRuleComponent>
     public bool CanPickAny(IEnumerable<ProtoId<GamePresetPrototype>> protos)
     {
         var players = GameTicker.ReadyPlayerCount();
-        var totalPlayers = _player.PlayerCount; //DeltaV
+        var totalPlayers = _playerManager.PlayerCount; //DeltaV
         foreach (var id in protos)
         {
             if (!_prototypeManager.TryIndex(id, out var selectedPreset))
