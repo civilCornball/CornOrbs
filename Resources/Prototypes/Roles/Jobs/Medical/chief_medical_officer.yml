@@ -54,7 +54,7 @@
   equipment:
     #id: CMOPDA # # Floofstation - let loadouts handle what pda to give
     ears: ClothingHeadsetCMO
-    belt: ClothingBeltMedicalFilled
+    #belt: ClothingBeltMedicalFilled # Euphoria - belt slot handled by MedicalDoctorBelts loadout group
   storage:
     back:
     - Flash

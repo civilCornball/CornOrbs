@@ -41,6 +41,15 @@
   loadouts:
   - ClothingNeckCollarEmotionalSupportBartender
 
+- type: loadoutGroup
+  id: FloofBartenderGlasses
+  abstract: true
+  parent: [FloofGlasses]
+  name: loadout-group-bartender-glasses
+  minLimit: 0
+  loadouts:
+  - LoadoutBartenderBeerGoggles # Euphoria
+
 
 # ======================================================== #
 # musician additions
@@ -87,6 +96,18 @@
   parent: FloofSocksPassenger
   loadouts:
   - ClothingUnderSocksMusician
+
+- type: loadoutGroup
+  id: MusicianGlasses
+  parent: [FloofGlasses] # Floofstation
+  name: loadout-group-musician-glasses
+  minLimit: 1
+  loadouts:
+  - LoadoutMusicianGlassesSunglasses
+  - Glasses
+  - GlassesCheapSunglasses
+  - GlassesJamjar
+  - GlassesJensen
 
 
 # ======================================================== #

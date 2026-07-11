@@ -92,7 +92,7 @@
     #gloves: ClothingHandsGlovesHop # DeltaV - Commented for Loadouts
     ears: ClothingHeadsetHoP # DeltaV - HoP is now a service role, replaces ClothingHeadsetAltCommand headset.
     belt: BoxFolderClipboardThreePapers
-    eyes: ClothingEyesHudCommand
+    #eyes: ClothingEyesHudCommand # Euphoria - eyes slot handled by HoPGlasses loadout group
   storage:
     back:
     - Flash

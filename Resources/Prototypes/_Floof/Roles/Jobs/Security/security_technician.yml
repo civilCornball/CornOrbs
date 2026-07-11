@@ -33,9 +33,9 @@
   id: SecTechGear
   equipment:
     ears: ClothingHeadsetSecurity
-    eyes: ClothingEyesHudDiagnostic
+    #eyes: ClothingEyesHudDiagnostic
     belt: ClothingBeltCombatUtilityFilled
-    head: ClothingHeadHelmetSecTech
+    #head: ClothingHeadHelmetSecTech
 
 - type: chameleonOutfit
   id: SecurityTechnicianChameleonOutfit

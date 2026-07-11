@@ -22,7 +22,7 @@
   equipment:
     #shoes: ClothingShoesBootsWork # Floofstation - allow loadouts to handle shoe customization
     #id: TechnicalAssistantPDA # Floofstation - let loadouts handle this
-    belt: ClothingBeltUtilityEngineering
+    #belt: ClothingBeltUtilityEngineering # Euphoria - belt slot handled by StationEngineerBelts loadout group
     ears: ClothingHeadsetEngineering
     pocket2: BookEngineersHandbook
   #storage:

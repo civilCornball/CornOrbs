@@ -19,7 +19,7 @@
 - type: startingGear
   id: MusicianGear
   equipment:
-    eyes: ClothingEyesGlassesSunglasses
+    #eyes: ClothingEyesGlassesSunglasses # Euphoria - eyes slot handled by MusicianGlasses loadout group
     #shoes: ClothingShoesBootsLaceup # Floofstation - allow loadouts to handle shoe customization
     #id: MusicianPDA # Floofstation - let loadouts handle pdas
     ears: ClothingHeadsetService

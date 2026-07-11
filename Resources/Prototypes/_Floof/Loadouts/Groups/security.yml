@@ -178,6 +178,14 @@
   - ClothingNeckCollarEmotionalSupportSecOfficer
 
 - type: loadoutGroup
+  id: SecTechHead
+  parent: [FloofHats] # Floofstation
+  name: loadout-group-security-technician-head
+  minLimit: 1
+  loadouts:
+  - LoadoutSecurityHelmetSecTech
+
+- type: loadoutGroup
   id: FloofSecurityTechnicianPdas
   name: loadout-group-security-sechtech-pdas
   minLimit: 1

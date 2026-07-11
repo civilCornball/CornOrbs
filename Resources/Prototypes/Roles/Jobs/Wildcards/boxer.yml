@@ -21,7 +21,7 @@
 - type: startingGear
   id: BoxerGear
   equipment:
-    id: BoxerPDA
+    #id: BoxerPDA # Euphoria - id slot handled by FloofBoxerPDAs loadout group
     ears: ClothingHeadsetService
     #shoes: ClothingShoesColorRed # Floofstation - allow loadouts to handle shoe customization
     belt: ClothingBeltChampion

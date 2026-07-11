@@ -1,0 +1,4 @@
+- type: loadout
+  id: LoadoutBartenderBeerGoggles
+  equipment:
+    eyes: ClothingEyesHudBeer

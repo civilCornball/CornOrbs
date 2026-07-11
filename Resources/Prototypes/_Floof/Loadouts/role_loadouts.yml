@@ -129,6 +129,7 @@
   id: JobSecurityTechnician
   parent: JobBaseLoadout # Euphoria
   groups:
+  - SecTechHead
   - SecurityHead
   - SecurityNeck
   - SecurityJumpsuit

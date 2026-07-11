@@ -1,0 +1,4 @@
+- type: loadout
+  id: LoadoutMusicianGlassesSunglasses
+  equipment:
+    eyes: ClothingEyesGlassesSunglasses

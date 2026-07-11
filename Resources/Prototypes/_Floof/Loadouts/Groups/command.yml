@@ -10,6 +10,18 @@
 
 # hop pdas
 - type: loadoutGroup
+  id: HoPGlasses
+  parent: [FloofGlasses] # Floofstation
+  name: loadout-group-hop-glasses
+  minLimit: 0
+  loadouts:
+  - LoadoutHoPCommandHud
+  - Glasses
+  - GlassesCheapSunglasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
   id: FloofHOPPDAs
   name: loadout-group-head-of-personnel-pdas
   minLimit: 1

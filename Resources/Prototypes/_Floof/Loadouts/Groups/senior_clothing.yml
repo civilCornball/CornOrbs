@@ -22,6 +22,7 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
+  - LoadoutEngineeringBeltUtility
   - ClothingBeltUtility
   - ClothingBeltUtilityAtmos
   - ClothingBeltUtilityAdvancedToolsEngineering
@@ -43,6 +44,7 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
+  - LoadoutMedicalBeltFilled
   - ClothingBeltMedical
   - ClothingBeltMedicalAdvancedFilled
 

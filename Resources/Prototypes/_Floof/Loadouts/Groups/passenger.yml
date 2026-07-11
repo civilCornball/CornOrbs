@@ -132,7 +132,7 @@
   name: loadout-group-passenger-shoes
   loadouts:
   - ClothingShoesBootsJack
-  - ClothingShoesBootsLaceup
+  - LoadoutShoesBootsLaceup # Euphoria
   - ClothingShoesBootsCowboyFancy
   - ClothingShoesBootsCowboyBlack
   - ClothingShoesBootsCowboyBrown

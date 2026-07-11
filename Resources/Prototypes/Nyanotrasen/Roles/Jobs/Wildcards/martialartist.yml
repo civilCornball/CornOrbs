@@ -19,7 +19,7 @@
 - type: startingGear
   id: MartialArtistGear
   equipment:
-    id: MartialArtistPDA
+    #id: MartialArtistPDA # Euphoria - id slot handled by FloofMartialArtistPDAs loadout group
     ears: ClothingHeadsetService
 
 - type: chameleonOutfit

@@ -31,7 +31,7 @@
   - HoPGloves # DeltaV
   - HoPShoes # DeltaV
   - FloofHOPPDAs # Floofstation
-  - Glasses
+  - HoPGlasses # Euphoria
   - Survival
   - HoPJobTrinkets
   - GroupSpeciesBreathTool
@@ -301,7 +301,7 @@
   - FloofMusicianGloves # Floofstation -  give musician access to gloves
   - FloofMusicianShoes # Floofstation - give musician access to shoes
   - MusicianOuterClothing
-  - Glasses
+  - MusicianGlasses # Euphoria
   - Survival
   - MusicianJobTrinkets
   - GroupSpeciesBreathTool

@@ -18,7 +18,7 @@
 - type: startingGear
   id: NyanoGladiatorGear
   equipment:
-    id: GladiatorPDA
+    #id: GladiatorPDA # Euphoria - id slot handled by FloofGladiatorPDAs loadout group
     ears: ClothingHeadsetPrison
   #any other possessions, spawn in cell
 

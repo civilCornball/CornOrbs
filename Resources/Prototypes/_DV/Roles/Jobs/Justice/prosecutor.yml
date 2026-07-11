@@ -27,7 +27,7 @@
     #jumpsuit: ClothingUniformJumpsuitProsecutor
     #neck: ClothingNeckProsecutorbadge
     #back: ClothingBackpackLawyerFilled
-    shoes: ClothingShoesBootsLaceup
+    #shoes: ClothingShoesBootsLaceup # Euphoria - shoes slot handled by PassengerShoes loadout group
     #id: ProsecutorPDA # Floofstation - let loadouts handle pdas
     ears: ClothingHeadsetJustice
     # TODO add copy of space law
